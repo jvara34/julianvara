@@ -1,39 +1,8 @@
-- [x] Add a homepage with a brief introduction
-
-// Keep all of the new sections not on separate pages but on the same page
-- [x] Add about section 
-    - [x] talk about myself 
-    - [x] add photo 
-- [x] Create a "Projects" section to showcase personal projects
-    - [x] Add project descriptions
-    - [x] Include links to GitHub repositories
-    - [x] Add screenshots or demos of projects
-    - [x] Add Dataset Exoplanet Code to github 
-    - [x] Add Photo of Dataset exoplanet to website 
-    - [ ] Add Video of Project for Code History 
-- [x] Add a "Resume" section
-    - [x] Upload a downloadable PDF version of the resume
-    - [x] Create a web-friendly version of the resume
-    - [x] Update Resume 
-- [x] Add a "Contact" section with:
-    - [x] Email address
-    - [x] Social media links (LinkedIn, GitHub, etc.)
-    - [x] Contact form
-    - [x] Change how to interact with the Contact Icons use Website for Reference 
-    - [x] Fixed the contact page on the bottom
-
-
-FUTURE IDEAS 
-- [ ] Clean up Project Section 
-- [ ] Fix about me photo
-- [ ] Light mode and Dark mode using javascript? 
-- [ ] Add design to the texts 
-- [ ] Implement responsive design for mobile and desktop
-- [x] Add icons for the contacts intead of adding the links to look nicer
-- [x] center the text to be more in the middle of the webpage 
-- [x] Add a navigation bar for easy access to sections
-- [x] Test website on multiple browsers
-- [x] Deploy website to github pages 
+[ ] Update the Complete to Green etc. 
+[ ] Update the images on the Project Section 
+[ ] Update the resume 
+[ ] Update the titles of the projects 
+[ ] Update Photo ? Subaru Photo ? 
 
 
 Color Schemes: 

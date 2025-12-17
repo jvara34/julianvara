@@ -4,121 +4,317 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-    <title>My Personal Website</title>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <title>Julian Vara - Portfolio</title>
 </head>
-<body class="body">
+<body>
     <header>
         <nav>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
-            <a href="Julian_Vara_Resume.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="VaraJulianResume.pdf" target="_blank" rel="noopener noreferrer">
                 <button class="btn">Resume</button>
             </a>
         </nav>
     </header>
-    <section id="intro"> 
-        <p>Hi, my name is</p>
-        <h1>Julian Vara</h1>
-        <p style="font-size: 10;">Hello! I'm Julian Vara, a Computer Science Student Studying at California State University, San Bernardino. Welcome to my personal website!</p>
-    </section>
-    
-    <section id="projects">
-        <div class="about-section">
-            <div class="text-container">
-            
-                    <h1>About Me</h1>
-                    <p>Hi, I’m Julian Vara — a computer science student passionate about continuous learning and solving real-world problems through technology. I began my academic journey at Riverside City College, where I earned an Associate of Science in Math and Science. I’m now pursuing a B.S. in Computer Science with a Minor in Data Science at California State University, San Bernardino.</p>
-                    <p>My technical skills include Python, C++, and R. I’ve completed a summer research project analyzing NASA data to study exoplanets using R Studio, where I applied data science techniques to uncover insights about orbital patterns and missing data. I enjoy turning complex datasets into meaningful results, and I’m especially interested in the intersection of AI, ethics, and responsible software design.</p> 
-                    <p>Outside of tech, I’m a huge Formula 1 fan. I’m drawn to the sport’s precision, discipline, and data-driven nature — qualities I aim to bring to my own work. Whether I’m analyzing team performance data or kart racing on the weekend, I value improvement through consistency and technical excellence. I also enjoy cooking, which lets me channel creativity in a different but equally rewarding way.</p>
-                    <p>I’m always open to new challenges, collaborations, and conversations around technology, innovation, and education. Feel free to connect — I’d be happy to chat!</p>
-                    <a href="mailto:jvara6282@gmail.com" class="email-button">
-                        <button class="btn">Contact</button>
-                    </a>     
-            </div>
-            <div class="image-container">
-                <img src="images/julian.jpeg" alt="Julian Vara" class="project-image">
-            </div>
-        </div>
-        
 
-    </section>   
+    <section id="intro">
+        <p class="greeting">Hi, my name is</p>
+        <h1>Julian Vara</h1>
+        <p class="subtitle">Computer Science Student & Data Science Researcher</p>
+        <p class="description">
+            I'm a computer science student at California State University, San Bernardino (3.91 GPA), passionate about artificial intelligence, 
+            deep learning, and using data to solve real-world problems. Currently conducting research in cancer detection using deep learning 
+            and developing GPU-accelerated license plate recognition systems at Purdue's Data Mine.
+        </p>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    I'm Julian Vara — a computer science student with a passion for artificial intelligence, deep learning, and data-driven 
+                    innovation. I began my academic journey at Riverside City College, earning an Associate of Science in Math and Science, 
+                    and I'm now pursuing a B.S. in Computer Science with a Minor in Data Science at California State University, San Bernardino 
+                    (GPA: 3.91).
+                </p>
+                <p>
+                    Currently, I serve as an Undergraduate Data Science Researcher at Purdue University's Data Mine, where I'm developing a 
+                    GPU-accelerated license plate recognition system using Python, OpenCV, TensorFlow, and NVIDIA CUDA. The system is capable 
+                    of processing 3,000 vehicles per hour per lane, and I work closely with V2X engineers to optimize detection reliability 
+                    across varied conditions.
+                </p>
+                <p>
+                    My research experience includes multiple summer positions at CSUSB. Most recently, I worked on variable selection in 
+                    penalized regression models, reducing 17,000+ predictors down to 20 while improving MSE from 0.3255 to 0.2299. I've also 
+                    developed prediction models for NASA exoplanet data, achieving 99% R-squared accuracy through log transformation techniques.
+                </p>
+                <p>
+                    I'm passionate about cancer detection research using deep learning, currently experimenting with CNNs, ResNet, VGGNet, 
+                    GoogLeNet, and EfficientNet on High Performance Computing clusters. I'm co-authoring a research paper with faculty on this work.
+                </p>
+                <p>
+                    Beyond research, I've contributed to real-world applications like Stalk.AI, a stock prediction platform with over 100 stocks 
+                    analyzed daily using machine learning. I'm also a Student Assistant Peer Advisor at CSUSB, helping diverse student populations 
+                    navigate their academic journeys.
+                </p>
+                <p>
+                    Outside of tech, I'm a dedicated Formula 1 fan, drawn to the sport's precision, data-driven strategies, and relentless 
+                    pursuit of excellence — values I bring to my own work. Whether analyzing race data or kart racing on weekends, I thrive on 
+                    continuous improvement and technical mastery. I also enjoy cooking, which allows me to express creativity in a different way.
+                </p>
+                <p>
+                    I'm always eager to collaborate on innovative projects, discuss AI ethics and responsible software design, or simply 
+                    connect with fellow tech enthusiasts. Feel free to reach out!
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="images/julian.jpeg" alt="Julian Vara">
+            </div>
+        </div>
         
-    
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Languages</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>C++</li>
+                    <li>R / RStudio</li>
+                    <li>HTML/CSS</li>
+                    <li>React</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>AI & Machine Learning</h3>
+                <ul>
+                    <li>TensorFlow & Keras</li>
+                    <li>PyTorch</li>
+                    <li>OpenCV</li>
+                    <li>Deep Learning (CNN, ResNet, VGG, GoogLeNet, EfficientNet)</li>
+                    <li>Computer Vision</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Tools & Technologies</h3>
+                <ul>
+                    <li>NVIDIA CUDA</li>
+                    <li>HPC Clusters</li>
+                    <li>FastAPI</li>
+                    <li>Firebase</li>
+                    <li>Git & GitHub</li>
+                    <li>Jupyter Notebook</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
     <section id="projects">
-        <h1 style="text-align: center; font-size: 40px">Projects</h1>
-        
-        <div class="about-section">
-            <div class="text-container"> 
-                <h2>Code History</h2>
-                <p>Code History is a question game where it ask the user 10 questions about programing history</p>
-                <p>Developed using MVVM architecture, Swift, Swift UI, Xcode</p>
-                <a href="https://github.com/jvara34/Code-History" target="_blank" aria-label="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                
-            </div>
-            <div>
-                <img src="images/codeHistory.png" alt="Code History" class="project-image">
-            </div>
-            <div> 
-                
-            </div>
-            
-        </div>
-        <div class="about-section">
-            <div class="text-container"> 
-                <h2>Computing Exoplanets’ Missing Values</h2>
-                <p>This project is a data science project that analyzes NASA data to study exoplanets using R Studio. It applies data science techniques to uncover insights about orbital patterns and missing data.</p>
-                <p>Developed using R, R Studio</p>
-                <a href="https://github.com/jvara34/Summer-2024-CSUSB/tree/main" target="_blank" aria-label="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-               
-            </div>
-            <div>
-                <img src="images/Data.png" alt="Data Science Project" class="project-image" style="width: 500px; height: auto;">
+        <h2 class="section-title">Featured Projects & Research</h2>
+
+        <!-- License Plate Recognition - Data Mine -->
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-info">
+                    <h3>GPU-Accelerated License Plate Recognition System</h3>
+                    <span class="project-status">In Progress</span>
+                    <p>
+                        <strong>Purdue University's Data Mine Program</strong> — Developing a high-performance license plate recognition system 
+                        using Python, OpenCV, TensorFlow, and NVIDIA CUDA. The system processes 3,000 vehicles per hour per lane with optimized 
+                        detection reliability across varied environmental conditions.
+                    </p>
+                    <p>
+                        Working with V2X engineers to refine image recognition models, expanding expertise in computer vision, text classification, 
+                        and high-performance computing. Delivering technical presentations to project stakeholders and shareholders.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">OpenCV</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">NVIDIA CUDA</span>
+                        <span class="tech-tag">Computer Vision</span>
+                        <span class="tech-tag">HPC</span>
+                    </div>
+                </div>
+                <div class="project-image-container">
+                    <img src="images/Data.png" alt="License Plate Recognition System">
+                </div>
             </div>
         </div>
-        <div class="about-section">
-            <div class="text-container">
-                <h2>Enhancing Convolutional Neural Networks with Layers</h2>
-                <p>Enhanced a convolutional neural network (CNN) by adding additional convolutional and max-pooling layers to improve model performance. Calculated and analyzed output dimensions at each stage to ensure correct architectural design. Gained hands-on experience with deep learning frameworks by modifying and running an existing CNN, deepening my understanding of model architecture and performance optimization.</p>
-                <p>Developed using VScode, Pytorch, Python</p>
-                <a href="https://github.com/jvara34/examples" target="_blank" aria-label="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-            </div>
-            <div>
-                <img src="images/CNN.png" alt="Enhancing Convolutional Neural Networks with Layers" class="project-image" style="width: 500px; height: auto;">
+
+        <!-- Cancer Detection Project -->
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-info">
+                    <h3>Comprehensive Study of Cancer Detection with Deep Learning</h3>
+                    <span class="project-status">In Progress</span>
+                    <p>
+                        Collaborative research with CSUSB faculty investigating deep learning methods for cancer detection classification. 
+                        Experimenting with five state-of-the-art architectures: CNNs, ResNet, VGGNet, GoogLeNet, and EfficientNet to determine 
+                        the most effective approach for medical image analysis.
+                    </p>
+                    <p>
+                        Building and refining scalable neural network architectures on High Performance Computing (HPC) clusters using TensorFlow 
+                        and Keras to enhance training efficiency and predictive accuracy. Co-authoring a research-level paper with faculty 
+                        detailing methods, results, and implications.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">Keras</span>
+                        <span class="tech-tag">Jupyter Notebook</span>
+                        <span class="tech-tag">CNN</span>
+                        <span class="tech-tag">ResNet</span>
+                        <span class="tech-tag">VGG</span>
+                        <span class="tech-tag">GoogLeNet</span>
+                        <span class="tech-tag">EfficientNet</span>
+                        <span class="tech-tag">HPC</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/jvara34/Cancer-Detection" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-image-container">
+                    <img src="images/CNN.png" alt="Cancer Detection Deep Learning Models">
+                </div>
             </div>
         </div>
-    </section>   
-       
-        
-        <section id="contact">
-            <h3>Contact Me</h3>
-            <div class="contact-icons">
-              <a href="https://github.com/jvara34" target="_blank" aria-label="GitHub">
+
+        <!-- Stalk.AI Project -->
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-info">
+                    <h3>Stalk.AI - Stock Prediction Platform</h3>
+                    <span class="project-status">Live</span>
+                    <p>
+                        AI-powered stock prediction platform that helps users make informed decisions about buying or selling stocks. 
+                        Developed FastAPI endpoints to serve daily predictions from machine learning models, with automated stock data 
+                        ingestion using yfinance and Firebase Firestore.
+                    </p>
+                    <p>
+                        Features over 100 stocks with daily updates, utilizing machine learning models to analyze market trends. 
+                        Implemented Firebase Authentication and built secure, user-facing frontend pages with React and Material-UI.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">Material-UI</span>
+                        <span class="tech-tag">Machine Learning</span>
+                        <span class="tech-tag">Vercel</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/JacobAdams54/stock_project" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://stock-project-32dbd.web.app" target="_blank" aria-label="Live Website">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-image-container">
+                    <img src="images/Data.png" alt="Stalk.AI Stock Prediction">
+                </div>
+            </div>
+        </div>
+
+        <!-- Variable Selection Project -->
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-info">
+                    <h3>Variable Selection in Penalized Regression Models Using Distance Correlation</h3>
+                    <span class="project-status">Completed</span>
+                    <p>
+                        <strong>CSUSB Summer Research 2025</strong> — Advanced research on variable selection techniques in high-dimensional 
+                        predictive modeling. Successfully reduced 17,000+ predictors down to 20 without sacrificing accuracy by applying 
+                        penalized regression with distance correlation, dramatically streamlining model complexity.
+                    </p>
+                    <p>
+                        <strong>Key Achievement:</strong> Improved predictive performance by lowering MSE from 0.3255 to 0.2299 and optimizing 
+                        AIC/BIC values through advanced regression modeling. Demonstrated that distance correlation outperforms traditional 
+                        Pearson correlation by capturing nonlinear relationships, making it a more robust criterion for penalized regression 
+                        frameworks. Ran large-scale simulations and data analyses in R/RStudio.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">R</span>
+                        <span class="tech-tag">RStudio</span>
+                        <span class="tech-tag">Statistical Analysis</span>
+                        <span class="tech-tag">Penalized Regression</span>
+                        <span class="tech-tag">Distance Correlation</span>
+                        <span class="tech-tag">Model Selection</span>
+                    </div>
+                </div>
+                <div class="project-image-container">
+                    <img src="images/Data.png" alt="Variable Selection Research">
+                </div>
+            </div>
+        </div>
+
+        <!-- Exoplanet Analysis Project -->
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-info">
+                    <h3>Exoplanet Semi-Major Axis Prediction Model</h3>
+                    <span class="project-status">Completed</span>
+                    <p>
+                        <strong>CSUSB Summer Research 2024</strong> — Interpreted NASA exoplanet datasets to develop a prediction model for 
+                        missing data on the semi-major axis of exoplanets. Used R/RStudio for extensive data manipulation and creation of 
+                        advanced statistical models.
+                    </p>
+                    <p>
+                        <strong>Results:</strong> Significantly improved the model with log transformation techniques, raising the R-squared 
+                        to 99% and reducing RMSE to 0.162. Applied advanced data science methodologies to uncover insights from astronomical 
+                        datasets and handle missing data patterns.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">R</span>
+                        <span class="tech-tag">RStudio</span>
+                        <span class="tech-tag">Data Science</span>
+                        <span class="tech-tag">Statistical Modeling</span>
+                        <span class="tech-tag">NASA Data</span>
+                        <span class="tech-tag">Log Transformation</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/jvara34/Summer-2024-CSUSB/tree/main" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-image-container">
+                    <img src="images/Data.png" alt="Exoplanet Data Analysis">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Let's Connect</h2>
+        <p style="color: var(--secondary-color); margin-bottom: 2rem; font-size: 1.1rem;">
+            I'm always open to new opportunities, collaborations, and conversations about technology and innovation.
+        </p>
+        <div class="contact-icons">
+            <a href="https://github.com/jvara34" target="_blank" aria-label="GitHub">
                 <i class="fab fa-github"></i>
-              </a>
-              <a href="https://linkedin.com/in/julian-vara/" target="_blank" aria-label="LinkedIn">
+            </a>
+            <a href="https://linkedin.com/in/julian-vara/" target="_blank" aria-label="LinkedIn">
                 <i class="fab fa-linkedin"></i>
-              </a>
-              <a href="tel:+19098000013" aria-label="Phone">
+            </a>
+            <a href="tel:+19098000013" aria-label="Phone">
                 <i class="fas fa-phone"></i>
-              </a>
-              <a href="mailto:jvara6282@gmail.com" aria-label="Email">
+            </a>
+            <a href="mailto:jvara6282@gmail.com" aria-label="Email">
                 <i class="fas fa-envelope"></i>
-              </a>
-              <a href="https://instagram.com/jewjew_34/" target="_blank" aria-label="Instagram">
+            </a>
+            <a href="https://instagram.com/jewjew_34/" target="_blank" aria-label="Instagram">
                 <i class="fab fa-instagram"></i>
-              </a>
-            </div>
-          
+            </a>
+        </div>
+    </section>
+
     <footer>
         <p>&copy; 2025 Julian Vara. All rights reserved.</p>
     </footer>

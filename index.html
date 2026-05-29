@@ -1,135 +1,208 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-    <title>Julian Vara - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Julian Vara — Portfolio</title>
 </head>
 <body>
+
+    <div class="hero-bg-mesh" aria-hidden="true"></div>
+
     <header>
         <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-            <a href="Julian_Vara_Resume.pdf" target="_blank" rel="noopener noreferrer">
-                <button class="btn">Resume</button>
-            </a>
-            <a href="Poster.pdf" target="_blank" rel="noopener noreferrer">
-                <button class="btn">Poster</button>
-            </a>
+            <a href="#hero" class="nav-logo">JV</a>
+
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+            <div class="nav-actions">
+                <a href="Julian_Vara_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-nav">Resume</a>
+                <a href="Poster.pdf" target="_blank" rel="noopener noreferrer" class="btn-nav">Poster</a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-sun" id="themeIcon"></i>
+                </button>
+                <button class="nav-hamburger" id="navToggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
         </nav>
     </header>
 
-    <section id="intro">
-        <p class="greeting">Hi, my name is</p>
-        <h1>Julian Vara</h1>
-        <p class="subtitle">Computer Science Student & Data Science Researcher</p>
-        <p class="description">
-            I'm a computer science student at California State University, San Bernardino (3.91 GPA), passionate about artificial intelligence, 
-            deep learning, and using data to solve real-world problems. Currently conducting research in cancer detection using deep learning 
-            and developing GPU-accelerated license plate recognition systems at Purdue's Data Mine.
+    <!-- Hero -->
+    <section id="hero">
+        <p class="hero-eyebrow">Hi, my name is</p>
+        <h1>Julian <span class="gradient-text">Vara</span></h1>
+        <p class="hero-role">
+            I'm a <span class="typed-text"></span><span class="cursor" aria-hidden="true">|</span>
         </p>
+        <p class="hero-desc">
+            Computer science student at CSUSB (3.91 GPA) passionate about AI, deep learning, and
+            using data to solve real-world problems. Currently building GPU-accelerated vision
+            systems at Purdue's Data Mine and researching cancer detection with deep learning.
+        </p>
+        <div class="hero-cta">
+            <a href="#projects" class="btn-primary">
+                <i class="fas fa-arrow-down"></i> View Projects
+            </a>
+            <a href="Julian_Vara_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-outline">
+                <i class="fas fa-file-alt"></i> Download Resume
+            </a>
+        </div>
     </section>
 
+    <!-- About -->
     <section id="about">
+        <p class="section-eyebrow">Who I am</p>
         <h2 class="section-title">About Me</h2>
+
         <div class="about-content">
-            <div class="about-text">
+            <div class="about-text" data-reveal="fade-up">
                 <p>
-                    I'm Julian Vara — a computer science student with a passion for artificial intelligence, deep learning, and data-driven 
-                    innovation. I began my academic journey at Riverside City College, earning an Associate of Science in Math and Science, 
-                    and I'm now pursuing a B.S. in Computer Science with a Minor in Data Science at California State University, San Bernardino 
+                    I'm Julian Vara — a computer science student with a passion for artificial intelligence, deep learning, and data-driven
+                    innovation. I began my academic journey at Riverside City College, earning an Associate of Science in Math and Science,
+                    and I'm now pursuing a B.S. in Computer Science with a Minor in Data Science at California State University, San Bernardino
                     (GPA: 3.91).
                 </p>
                 <p>
-                    Currently, I serve as an Undergraduate Data Science Researcher at Purdue University's Data Mine, where I'm developing a 
-                    GPU-accelerated license plate recognition system using Python, OpenCV, TensorFlow, and NVIDIA CUDA. The system is capable 
-                    of processing 3,000 vehicles per hour per lane, and I work closely with V2X engineers to optimize detection reliability 
+                    Currently, I serve as an Undergraduate Data Science Researcher at Purdue University's Data Mine, where I'm developing a
+                    GPU-accelerated license plate recognition system using Python, OpenCV, TensorFlow, and NVIDIA CUDA. The system is capable
+                    of processing 3,000 vehicles per hour per lane, and I work closely with V2X engineers to optimize detection reliability
                     across varied conditions.
                 </p>
                 <p>
-                    My research experience includes multiple summer positions at CSUSB. Most recently, I worked on variable selection in 
-                    penalized regression models, reducing 17,000+ predictors down to 20 while improving MSE from 0.3255 to 0.2299. I've also 
+                    My research experience includes multiple summer positions at CSUSB. Most recently, I worked on variable selection in
+                    penalized regression models, reducing 17,000+ predictors down to 20 while improving MSE from 0.3255 to 0.2299. I've also
                     developed prediction models for NASA exoplanet data, achieving 99% R-squared accuracy through log transformation techniques.
                 </p>
+
+                <blockquote class="pull-quote">
+                    Whether analyzing race data or kart racing on weekends, I thrive on continuous improvement and technical mastery.
+                </blockquote>
+
                 <p>
-                    I'm passionate about cancer detection research using deep learning, currently experimenting with CNNs, ResNet, VGGNet, 
-                    GoogLeNet, and EfficientNet on High Performance Computing clusters. I'm co-authoring a research paper with faculty on this work.
+                    Beyond research, I've contributed to Stalk.AI, a stock prediction platform analyzing 100+ stocks daily with machine learning.
+                    I'm also a Student Assistant Peer Advisor at CSUSB, helping diverse student populations navigate their academic journeys.
                 </p>
                 <p>
-                    Beyond research, I've contributed to real-world applications like Stalk.AI, a stock prediction platform with over 100 stocks 
-                    analyzed daily using machine learning. I'm also a Student Assistant Peer Advisor at CSUSB, helping diverse student populations 
-                    navigate their academic journeys.
-                </p>
-                <p>
-                    Outside of tech, I'm a dedicated Formula 1 fan, drawn to the sport's precision, data-driven strategies, and relentless 
-                    pursuit of excellence — values I bring to my own work. Whether analyzing race data or kart racing on weekends, I thrive on 
-                    continuous improvement and technical mastery. I also enjoy cooking, which allows me to express creativity in a different way.
-                </p>
-                <p>
-                    I'm always eager to collaborate on innovative projects, discuss AI ethics and responsible software design, or simply 
-                    connect with fellow tech enthusiasts. Feel free to reach out!
+                    I'm always eager to collaborate on innovative projects, discuss AI ethics, or simply connect with fellow tech enthusiasts.
+                    Feel free to reach out!
                 </p>
             </div>
-            <div class="about-image">
+
+            <div class="image-frame" data-reveal="fade-left" data-reveal-delay="150">
                 <img src="images/julian.jpeg" alt="Julian Vara">
             </div>
         </div>
-        
+
         <div class="skills-grid">
-            <div class="skill-category">
+            <div class="skill-category" data-reveal="fade-up" data-reveal-delay="0">
                 <h3>Languages</h3>
-                <ul>
-                    <li>Python</li>
-                    <li>C++</li>
-                    <li>R / RStudio</li>
-                    <li>HTML/CSS</li>
-                    <li>React</li>
-                </ul>
+                <div class="skill-pills">
+                    <span class="skill-pill">Python</span>
+                    <span class="skill-pill">C++</span>
+                    <span class="skill-pill">R / RStudio</span>
+                    <span class="skill-pill">HTML / CSS</span>
+                    <span class="skill-pill">React</span>
+                </div>
             </div>
-            <div class="skill-category">
+            <div class="skill-category" data-reveal="fade-up" data-reveal-delay="100">
                 <h3>AI & Machine Learning</h3>
-                <ul>
-                    <li>TensorFlow & Keras</li>
-                    <li>PyTorch</li>
-                    <li>OpenCV</li>
-                    <li>Deep Learning (CNN, ResNet, VGG, GoogLeNet, EfficientNet)</li>
-                    <li>Computer Vision</li>
-                </ul>
+                <div class="skill-pills">
+                    <span class="skill-pill">TensorFlow</span>
+                    <span class="skill-pill">Keras</span>
+                    <span class="skill-pill">PyTorch</span>
+                    <span class="skill-pill">OpenCV</span>
+                    <span class="skill-pill">CNN</span>
+                    <span class="skill-pill">ResNet</span>
+                    <span class="skill-pill">VGGNet</span>
+                    <span class="skill-pill">GoogLeNet</span>
+                    <span class="skill-pill">EfficientNet</span>
+                    <span class="skill-pill">Computer Vision</span>
+                </div>
             </div>
-            <div class="skill-category">
+            <div class="skill-category" data-reveal="fade-up" data-reveal-delay="200">
                 <h3>Tools & Technologies</h3>
-                <ul>
-                    <li>NVIDIA CUDA</li>
-                    <li>HPC Clusters</li>
-                    <li>FastAPI</li>
-                    <li>Firebase</li>
-                    <li>Git & GitHub</li>
-                    <li>Jupyter Notebook</li>
-                </ul>
+                <div class="skill-pills">
+                    <span class="skill-pill">NVIDIA CUDA</span>
+                    <span class="skill-pill">HPC Clusters</span>
+                    <span class="skill-pill">FastAPI</span>
+                    <span class="skill-pill">Firebase</span>
+                    <span class="skill-pill">Git & GitHub</span>
+                    <span class="skill-pill">Jupyter Notebook</span>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Projects -->
     <section id="projects">
-        <h2 class="section-title">Featured Projects & Research</h2>
+        <p class="section-eyebrow">What I've built</p>
+        <h2 class="section-title">Featured Projects</h2>
 
-        <!-- License Plate Recognition - Data Mine -->
-        <div class="project-card">
+        <!-- 01 Tally -->
+        <div class="project-card" data-reveal="fade-up" data-reveal-delay="0">
+            <span class="project-number" aria-hidden="true">01</span>
+            <div class="project-content">
+                <div class="project-info">
+                    <h3>Tally — iOS Budget Tracker</h3>
+                    <span class="project-status status-review">Under Review</span>
+                    <p>
+                        Solo-built React Native iOS budget tracker published to the Apple App Store. Offline-first design with all data
+                        stored on-device via SQLite — no backend, no accounts required. Features full CRUD for transactions, categories,
+                        and savings goals with schema versioning.
+                    </p>
+                    <p>
+                        End-to-end ownership: database schema → custom SVG donut chart UI → native device features (push notifications,
+                        secure storage) → App Store submission. Handled full deployment including encryption compliance (ITAR/EAR),
+                        privacy policy, App Store Connect metadata, and TestFlight beta testing.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React Native</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Expo SDK 54</span>
+                        <span class="tech-tag">SQLite</span>
+                        <span class="tech-tag">Zustand</span>
+                        <span class="tech-tag">Expo Router</span>
+                        <span class="tech-tag">EAS Build</span>
+                        <span class="tech-tag">App Store</span>
+                    </div>
+                </div>
+                <div class="project-image-container">
+                    <div class="project-screenshots">
+                        <img class="app-icon" src="images/tally.png" alt="Tally App Icon">
+                        <div class="phone-shots">
+                            <img src="images/Tally_1.png" alt="Tally Categories screen">
+                            <img src="images/Tally_2.png" alt="Tally Insights screen">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 02 V2X Image Recognition -->
+        <div class="project-card" data-reveal="fade-up" data-reveal-delay="80">
+            <span class="project-number" aria-hidden="true">02</span>
             <div class="project-content">
                 <div class="project-info">
                     <h3>V2X Image Recognition</h3>
-                    <span class="project-status">Done</span>
+                    <span class="project-status status-done">Done</span>
                     <p>
-                        <strong>Purdue University's National Data Mine Program</strong> — Developing a high-performance license plate recognition system 
-                        using Python, OpenCV, TensorFlow, and NVIDIA CUDA. The system processes 3,000 vehicles per hour per lane with optimized 
-                        detection reliability across varied environmental conditions.
+                        <strong>Purdue University's National Data Mine Program</strong> — High-performance license plate recognition
+                        system using Python, OpenCV, TensorFlow, and NVIDIA CUDA. Processes 3,000 vehicles per hour per lane with
+                        optimized detection reliability across varied environmental conditions.
                     </p>
                     <p>
-                        Working with V2X engineers to refine image recognition models, expanding expertise in computer vision, text classification, 
-                        and high-performance computing. Delivering technical presentations to project stakeholders and shareholders.
+                        Working with V2X engineers to refine image recognition models, expanding expertise in computer vision,
+                        text classification, and high-performance computing.
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">Python</span>
@@ -146,60 +219,20 @@
             </div>
         </div>
 
-        <!-- Cancer Detection Project -->
-        <div class="project-card">
+        <!-- 03 Stalk.AI -->
+        <div class="project-card" data-reveal="fade-up" data-reveal-delay="0">
+            <span class="project-number" aria-hidden="true">03</span>
             <div class="project-content">
                 <div class="project-info">
-                    <h3>Comprehensive Study of Cancer Detection with Deep Learning</h3>
-                    <span class="project-status">In Progress</span>
+                    <h3>Stalk.AI — Stock Prediction Platform</h3>
+                    <span class="project-status status-live">Live</span>
                     <p>
-                        Collaborative research with CSUSB faculty investigating deep learning methods for cancer detection classification. 
-                        Experimenting with five state-of-the-art architectures: CNNs, ResNet, VGGNet, GoogLeNet, and EfficientNet to determine 
-                        the most effective approach for medical image analysis.
+                        AI-powered stock prediction platform helping users make informed buy/sell decisions. Developed FastAPI endpoints
+                        to serve daily predictions from ML models, with automated data ingestion via yfinance and Firebase Firestore.
                     </p>
                     <p>
-                        Building and refining scalable neural network architectures on High Performance Computing (HPC) clusters using TensorFlow 
-                        and Keras to enhance training efficiency and predictive accuracy. Co-authoring a research-level paper with faculty 
-                        detailing methods, results, and implications.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">TensorFlow</span>
-                        <span class="tech-tag">Keras</span>
-                        <span class="tech-tag">Jupyter Notebook</span>
-                        <span class="tech-tag">CNN</span>
-                        <span class="tech-tag">ResNet</span>
-                        <span class="tech-tag">VGG</span>
-                        <span class="tech-tag">GoogLeNet</span>
-                        <span class="tech-tag">EfficientNet</span>
-                        <span class="tech-tag">HPC</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/jvara34/Cancer-Detection" target="_blank" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-image-container">
-                    <img src="images/CNN.png" alt="Cancer Detection Deep Learning Models">
-                </div>
-            </div>
-        </div>
-
-        <!-- Stalk.AI Project -->
-        <div class="project-card">
-            <div class="project-content">
-                <div class="project-info">
-                    <h3>Stalk.AI - Stock Prediction Platform</h3>
-                    <span class="project-status">Live</span>
-                    <p>
-                        AI-powered stock prediction platform that helps users make informed decisions about buying or selling stocks. 
-                        Developed FastAPI endpoints to serve daily predictions from machine learning models, with automated stock data 
-                        ingestion using yfinance and Firebase Firestore.
-                    </p>
-                    <p>
-                        Features over 100 stocks with daily updates, utilizing machine learning models to analyze market trends. 
-                        Implemented Firebase Authentication and built secure, user-facing frontend pages with React and Material-UI.
+                        Features 100+ stocks with daily updates. Implemented Firebase Authentication and built a React + Material-UI
+                        frontend with secure user-facing pages.
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">Python</span>
@@ -225,22 +258,60 @@
             </div>
         </div>
 
-        <!-- Variable Selection Project -->
-        <div class="project-card">
+        <!-- 04 Cancer Detection -->
+        <div class="project-card" data-reveal="fade-up" data-reveal-delay="80">
+            <span class="project-number" aria-hidden="true">04</span>
             <div class="project-content">
                 <div class="project-info">
-                    <h3>Variable Selection in Penalized Regression Models Using Distance Correlation</h3>
-                    <span class="project-status">Completed</span>
+                    <h3>Cancer Detection with Deep Learning</h3>
+                    <span class="project-status status-done">Completed</span>
                     <p>
-                        <strong>CSUSB Summer Research 2025</strong> — Advanced research on variable selection techniques in high-dimensional 
-                        predictive modeling. Successfully reduced 17,000+ predictors down to 20 without sacrificing accuracy by applying 
-                        penalized regression with distance correlation, dramatically streamlining model complexity.
+                        Collaborative research with CSUSB faculty investigating deep learning methods for cancer detection classification.
+                        Experimenting with five architectures — CNNs, ResNet, VGGNet, GoogLeNet, and EfficientNet — to determine the
+                        most effective approach for medical image analysis.
                     </p>
                     <p>
-                        <strong>Key Achievement:</strong> Improved predictive performance by lowering MSE from 0.3255 to 0.2299 and optimizing 
-                        AIC/BIC values through advanced regression modeling. Demonstrated that distance correlation outperforms traditional 
-                        Pearson correlation by capturing nonlinear relationships, making it a more robust criterion for penalized regression 
-                        frameworks. Ran large-scale simulations and data analyses in R/RStudio.
+                        Building and refining scalable neural network architectures on HPC clusters with TensorFlow and Keras.
+                        Co-authoring a research-level paper with faculty.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">Keras</span>
+                        <span class="tech-tag">CNN</span>
+                        <span class="tech-tag">ResNet</span>
+                        <span class="tech-tag">VGG</span>
+                        <span class="tech-tag">GoogLeNet</span>
+                        <span class="tech-tag">EfficientNet</span>
+                        <span class="tech-tag">HPC</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/jvara34/Cancer-Detection" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-image-container">
+                    <img src="images/CNN.png" alt="Cancer Detection Deep Learning">
+                </div>
+            </div>
+        </div>
+
+        <!-- 05 Variable Selection -->
+        <div class="project-card" data-reveal="fade-up" data-reveal-delay="0">
+            <span class="project-number" aria-hidden="true">05</span>
+            <div class="project-content">
+                <div class="project-info">
+                    <h3>Variable Selection in Penalized Regression</h3>
+                    <span class="project-status status-done">Completed</span>
+                    <p>
+                        <strong>CSUSB Summer Research 2025</strong> — Advanced research on variable selection in high-dimensional
+                        predictive modeling. Reduced 17,000+ predictors to 20 without sacrificing accuracy using penalized regression
+                        with distance correlation.
+                    </p>
+                    <p>
+                        <strong>Key result:</strong> Improved MSE from 0.3255 → 0.2299. Demonstrated distance correlation outperforms
+                        Pearson correlation by capturing nonlinear relationships.
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">R</span>
@@ -248,7 +319,6 @@
                         <span class="tech-tag">Statistical Analysis</span>
                         <span class="tech-tag">Penalized Regression</span>
                         <span class="tech-tag">Distance Correlation</span>
-                        <span class="tech-tag">Model Selection</span>
                     </div>
                 </div>
                 <div class="project-image-container">
@@ -257,21 +327,19 @@
             </div>
         </div>
 
-        <!-- Exoplanet Analysis Project -->
-        <div class="project-card">
+        <!-- 06 Exoplanet -->
+        <div class="project-card" data-reveal="fade-up" data-reveal-delay="80">
+            <span class="project-number" aria-hidden="true">06</span>
             <div class="project-content">
                 <div class="project-info">
-                    <h3>Exoplanet Semi-Major Axis Prediction Model</h3>
-                    <span class="project-status">Completed</span>
+                    <h3>Exoplanet Semi-Major Axis Prediction</h3>
+                    <span class="project-status status-done">Completed</span>
                     <p>
-                        <strong>CSUSB Summer Research 2024</strong> — Interpreted NASA exoplanet datasets to develop a prediction model for 
-                        missing data on the semi-major axis of exoplanets. Used R/RStudio for extensive data manipulation and creation of 
-                        advanced statistical models.
+                        <strong>CSUSB Summer Research 2024</strong> — Interpreted NASA exoplanet datasets to develop a prediction model
+                        for missing semi-major axis data. Used R/RStudio for extensive data manipulation and advanced statistical modeling.
                     </p>
                     <p>
-                        <strong>Results:</strong> Significantly improved the model with log transformation techniques, raising the R-squared 
-                        to 99% and reducing RMSE to 0.162. Applied advanced data science methodologies to uncover insights from astronomical 
-                        datasets and handle missing data patterns.
+                        <strong>Results:</strong> Raised R-squared to 99% and reduced RMSE to 0.162 via log transformation techniques.
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">R</span>
@@ -292,28 +360,38 @@
                 </div>
             </div>
         </div>
+
     </section>
 
+    <!-- Contact -->
     <section id="contact">
-        <h2>Let's Connect</h2>
-        <p style="color: var(--secondary-color); margin-bottom: 2rem; font-size: 1.1rem;">
+        <p class="contact-eyebrow" data-reveal="fade-up">Available for opportunities</p>
+        <h2 class="contact-headline" data-reveal="fade-up" data-reveal-delay="80">
+            Let's build<br><span class="gradient-text">something great.</span>
+        </h2>
+        <p class="contact-subtext" data-reveal="fade-up" data-reveal-delay="160">
             I'm always open to new opportunities, collaborations, and conversations about technology and innovation.
         </p>
-        <div class="contact-icons">
-            <a href="https://github.com/jvara34" target="_blank" aria-label="GitHub">
-                <i class="fab fa-github"></i>
+        <div class="contact-icons" data-reveal="fade-up" data-reveal-delay="240">
+            <a href="https://github.com/jvara34" target="_blank" class="contact-icon-link" aria-label="GitHub">
+                <span class="icon-circle"><i class="fab fa-github"></i></span>
+                <span class="contact-label">GitHub</span>
             </a>
-            <a href="https://linkedin.com/in/julian-vara/" target="_blank" aria-label="LinkedIn">
-                <i class="fab fa-linkedin"></i>
+            <a href="https://linkedin.com/in/julian-vara/" target="_blank" class="contact-icon-link" aria-label="LinkedIn">
+                <span class="icon-circle"><i class="fab fa-linkedin"></i></span>
+                <span class="contact-label">LinkedIn</span>
             </a>
-            <a href="tel:+19098000013" aria-label="Phone">
-                <i class="fas fa-phone"></i>
+            <a href="tel:+19098000013" class="contact-icon-link" aria-label="Phone">
+                <span class="icon-circle"><i class="fas fa-phone"></i></span>
+                <span class="contact-label">Phone</span>
             </a>
-            <a href="mailto:jvara6282@gmail.com" aria-label="Email">
-                <i class="fas fa-envelope"></i>
+            <a href="mailto:jvara6282@gmail.com" class="contact-icon-link" aria-label="Email">
+                <span class="icon-circle"><i class="fas fa-envelope"></i></span>
+                <span class="contact-label">Email</span>
             </a>
-            <a href="https://instagram.com/jewjew_34/" target="_blank" aria-label="Instagram">
-                <i class="fab fa-instagram"></i>
+            <a href="https://instagram.com/jewjew_34/" target="_blank" class="contact-icon-link" aria-label="Instagram">
+                <span class="icon-circle"><i class="fab fa-instagram"></i></span>
+                <span class="contact-label">Instagram</span>
             </a>
         </div>
     </section>
@@ -321,5 +399,7 @@
     <footer>
         <p>&copy; 2025 Julian Vara. All rights reserved.</p>
     </footer>
+
+    <script src="script.js" defer></script>
 </body>
 </html>
